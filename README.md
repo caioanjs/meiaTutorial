@@ -1,1 +1,1 @@
-# FAQ/Tutorial - [omeiaum](https://www.twitch.tv/omeiaum)
+# FAQ/Tutorial - chat do [oMeiaUm](https://www.twitch.tv/omeiaum)
