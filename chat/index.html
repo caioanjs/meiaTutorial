@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tutorial oMeiaUm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #11001b;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #11001b;
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        /* Ajustando o tamanho da imagem para ser menor */
+        header img {
+            width: 10%; /* Diminui a largura para 50% do tamanho original */
+            height: auto; /* A altura é ajustada automaticamente para manter a proporção */
+            object-fit: cover; /* Garante que a imagem ocupe o espaço sem distorcer */
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .category {
+            margin-bottom: 30px;
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .category-header img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .category-header h2 {
+            color: #ffffff;
+            font-size: 1.4rem;
+            margin: 0;
+        }
+
+        .category-description {
+            font-size: 0.9rem;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .dropdown {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropdown summary {
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .dropdown summary::marker {
+            display: none;
+        }
+
+        .dropdown summary .toggle {
+            margin-left: auto;
+            font-size: 1.5rem;
+            color: #666;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        details[open] summary .toggle::after {
+            content: "-";
+        }
+
+        summary .toggle::after {
+            content: "+";
+        }
+
+        .dropdown p {
+            margin: 10px 0 0;
+            font-size: 0.95rem;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Substituindo o título por uma imagem com tamanho 526x205 -->
+        <img src="https://i.imgur.com/2IdiVJz.png" alt="Tutorial oMeiaUm">
+    </header>
+
+    <main>
+        <!-- Categoria 1 -->
+        <div class="category">
+            <div class="category-header">
+                <img src="https://via.placeholder.com/40" alt="Ícone">
+                <h2>Categoria 1</h2>
+            </div>
+            <p class="category-description">Descrição da categoria...</p>
+            <details class="dropdown">
+                <summary>
+                    Pergunta 1?
+                    <span class="toggle"></span>
+                </summary>
+                <p>Resposta da pergunta 1...</p>
+            </details>
+            <details class="dropdown">
+                <summary>
+                    Pergunta 2?
+                    <span class="toggle"></span>
+                </summary>
+                <p>Resposta da pergunta 2...</p>
+            </details>
+        </div>
+
+        <!-- Categoria 2 -->
+        <div class="category">
+            <div class="category-header">
+                <img src="https://via.placeholder.com/40" alt="Ícone">
+                <h2>Categoria 2</h2>
+            </div>
+            <p class="category-description">Descrição da categoria...</p>
+            <details class="dropdown">
+                <summary>
+                    Pergunta 3?
+                    <span class="toggle"></span>
+                </summary>
+                <p>Resposta da pergunta 3...</p>
+            </details>
+            <details class="dropdown">
+                <summary>
+                    Pergunta 4?
+                    <span class="toggle"></span>
+                </summary>
+                <p>Resposta da pergunta 4...</p>
+            </details>
+        </div>
+    </main>
+</body>
+
+</html>
