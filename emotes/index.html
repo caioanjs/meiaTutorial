@@ -14,7 +14,6 @@
             background-color: #121212;
             color: #f5f5f5;
             line-height: 1.6;
-
         }
         header {
             background-color: #1e1e1e;
@@ -59,17 +58,15 @@
             user-select: none; /* Impede a seleção de texto ao clicar */
         }
         .question {
-            display: none;
-            margin-top: 10px;
             opacity: 0;
             max-height: 0;
             overflow: hidden;
-            transition: opacity 0.4s ease, max-height 0.4s ease; /* Animação suave para a resposta */
+            margin-top: 10px;
+            transition: opacity 0.5s ease, max-height 0.5s ease; /* Animação suave */
         }
         .question.open {
-            display: block;
             opacity: 1;
-            max-height: 500px; /* Pode ajustar conforme o conteúdo */
+            max-height: 500px; /* Ajuste conforme necessário */
         }
         .question p {
             margin: 5px 0 10px;
@@ -87,36 +84,35 @@
         }
         .icon {
             font-size: 24px;
-            /* Garantir que o ícone apareça */
         }
         a:link {
-  color: #f43163;
-  background-color: transparent;
-  text-decoration: none;
-}
+            color: #f43163;
+            background-color: transparent;
+            text-decoration: none;
+        }
 
-a:visited {
-  color: #f43163;
-  background-color: transparent;
-  text-decoration: none;
-}
+        a:visited {
+            color: #f43163;
+            background-color: transparent;
+            text-decoration: none;
+        }
 
-a:hover {
-  color: #f43163;
-  background-color: transparent;
-  text-decoration: underline;
-}
+        a:hover {
+            color: #f43163;
+            background-color: transparent;
+            text-decoration: underline;
+        }
 
-a:active {
-  color: #f43163;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-.titulo {
-    text-align: center;
-    color: #f43163;
-}
+        a:active {
+            color: #f43163;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        .titulo {
+           text-align: center;  /* Centraliza o texto */
+            color: #f43163;
+            margin-top: 30px;  /* Ajusta a distância do topo se necessário */
+        }
     </style>
 </head>
 <body>
@@ -172,11 +168,11 @@ a:active {
 
     <main>
         <section>
-            <h2 onclick="toggleAnswer(3)">
+            <h2 onclick="toggleAnswer(4)">
                 📌 pergunta 4
-                <span class="icon" id="icon3">+</span>
+                <span class="icon" id="icon4">+</span>
             </h2>
-            <div class="question" id="answer3">
+            <div class="question" id="answer4">
                 <p>As transmissões acontecem de segunda a sexta-feira, das 20h às 23h. Fique ligado nas notificações!</p>
             </div>
         </section>
@@ -184,11 +180,11 @@ a:active {
 
     <main>
         <section>
-            <h2 onclick="toggleAnswer(3)">
+            <h2 onclick="toggleAnswer(5)">
                 📌 pergunta 5
-                <span class="icon" id="icon3">+</span>
+                <span class="icon" id="icon5">+</span>
             </h2>
-            <div class="question" id="answer3">
+            <div class="question" id="answer5">
                 <p>As transmissões acontecem de segunda a sexta-feira, das 20h às 23h. Fique ligado nas notificações!</p>
             </div>
         </section>
@@ -196,11 +192,11 @@ a:active {
 
     <main>
         <section>
-            <h2 onclick="toggleAnswer(3)">
+            <h2 onclick="toggleAnswer(6)">
                 📌 pergunta 6
-                <span class="icon" id="icon3">+</span>
+                <span class="icon" id="icon6">+</span>
             </h2>
-            <div class="question" id="answer3">
+            <div class="question" id="answer6">
                 <p>As transmissões acontecem de segunda a sexta-feira, das 20h às 23h. Fique ligado nas notificações!</p>
             </div>
         </section>
@@ -219,6 +215,16 @@ a:active {
                 answer.classList.remove('open');
                 icon.textContent = '+';  // Muda para "+"
             } else {
+                // Fecha outros dropdowns antes de abrir o atual (opcional)
+                const allAnswers = document.querySelectorAll('.question');
+                allAnswers.forEach(ans => {
+                    if (ans !== answer) {
+                        ans.classList.remove('open');
+                        const otherIcon = ans.previousElementSibling.querySelector('.icon');
+                        if (otherIcon) otherIcon.textContent = '+'; // Restabelece os outros ícones
+                    }
+                });
+
                 answer.classList.add('open');
                 icon.textContent = '-';  // Muda para "-"
             }
