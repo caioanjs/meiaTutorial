@@ -1,176 +1,227 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tutorial oMeiaUm</title>
+    <title>Tutorial do Chat - Subathon</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.7tv.app/emote/01J3TH4BR0000D6Z8P187FZ2VZ/4x.avif">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #11001b;
-            color: #333;
+            background-color: #121212;
+            color: #f5f5f5;
             line-height: 1.6;
-        }
 
+        }
         header {
-            background-color: #11001b;
-            color: #fff;
+            background-color: #1e1e1e;
+            padding: 20px;
             text-align: center;
-            padding: 20px 10px;
+            border-bottom: 3px solid #f43163;
         }
-
-        /* Ajustando o tamanho da imagem para ser menor */
-        header img {
-            width: 10%; /* Diminui a largura para 50% do tamanho original */
-            height: auto; /* A altura é ajustada automaticamente para manter a proporção */
-            object-fit: cover; /* Garante que a imagem ocupe o espaço sem distorcer */
+        header h1 {
+            margin: 0;
+            color: #f43163;
         }
-
+        nav {
+            background-color: #1e1e1e;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #f43163;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         main {
             max-width: 800px;
             margin: 20px auto;
-            padding: 0 15px;
-        }
-
-        .category {
-            margin-bottom: 30px;
-        }
-
-        .category-header {
-            display: flex;
-            align-items: center;
+            padding: 20px;
+            background: #2c2c2c;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             margin-bottom: 10px;
         }
-
-        .category-header img {
-            width: 40px;
-            height: 40px;
-            margin-right: 10px;
-        }
-
-        .category-header h2 {
-            color: #ffffff;
-            font-size: 1.4rem;
-            margin: 0;
-        }
-
-        .category-description {
-            font-size: 0.9rem;
-            color: #ffffff;
-            margin-bottom: 15px;
-        }
-
-        .dropdown {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            padding: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .dropdown summary {
-            font-size: 1rem;
-            font-weight: bold;
+        h2 {
+            color: #f43163;
+            margin-top: 20px;
             cursor: pointer;
-            list-style: none;
             display: flex;
+            justify-content: space-between;
             align-items: center;
+            user-select: none; /* Impede a seleção de texto ao clicar */
         }
-
-        .dropdown summary::marker {
+        .question {
             display: none;
+            margin-top: 10px;
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 0.4s ease, max-height 0.4s ease; /* Animação suave para a resposta */
         }
-
-        .dropdown summary .toggle {
-            margin-left: auto;
-            font-size: 1.5rem;
-            color: #666;
-            font-weight: bold;
-            transition: transform 0.3s;
+        .question.open {
+            display: block;
+            opacity: 1;
+            max-height: 500px; /* Pode ajustar conforme o conteúdo */
         }
-
-        details[open] summary .toggle::after {
-            content: "-";
+        .question p {
+            margin: 5px 0 10px;
         }
-
-        summary .toggle::after {
-            content: "+";
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #1e1e1e;
+            color: #888;
+            border-top: 1px solid #333;
         }
-
-        .dropdown p {
-            margin: 10px 0 0;
-            font-size: 0.95rem;
-        }
-
-        a {
-            color: #0066cc;
+        footer a {
+            color: #f43163;
             text-decoration: none;
         }
-
-        a:hover {
-            text-decoration: underline;
+        .icon {
+            font-size: 24px;
+            /* Garantir que o ícone apareça */
         }
+        a:link {
+  color: #f43163;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #f43163;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f43163;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #f43163;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.titulo {
+    text-align: center;
+    color: #f43163;
+}
     </style>
 </head>
-
 <body>
     <header>
-        <!-- Substituindo o título por uma imagem com tamanho 526x205 -->
-        <img src="https://i.imgur.com/2IdiVJz.png" alt="Tutorial oMeiaUm">
+        <h1>Tutorial do Chat</h1>
+        <p>Tudo o que você precisa saber sobre o chat do <a href="https://twitch.tv/omeiaum" target="_blank">oMeiaUm</a>!</p>
     </header>
+    <nav>
+        <a href="https://meiathon.vercel.app">Inicio</a>
+        <a href="sobre">Subathon</a>
+        <a href="jogos">Chat</a>
+        <a href="emotes">Emotes</a>
+        <a href="twitch">Twitch</a>
+    </nav>
+
+    <h1 class="titulo">Chat</h1>
 
     <main>
-        <!-- Categoria 1 -->
-        <div class="category">
-            <div class="category-header">
-                <img src="https://via.placeholder.com/40" alt="Ícone">
-                <h2>Categoria 1</h2>
+        <section>
+            <h2 onclick="toggleAnswer(1)">
+                📌 pergunta 1
+                <span class="icon" id="icon1">+</span>
+            </h2>
+            <div class="question" id="answer1">
+                <p>Uma subathon é uma live em que, a cada Pix ou Sub, um tempo específico é adicionado ao timer. A live continua até o timer chegar a zero, ou seja, não pode acabar enquanto houver tempo no contador.</p>
             </div>
-            <p class="category-description">Descrição da categoria...</p>
-            <details class="dropdown">
-                <summary>
-                    Pergunta 1?
-                    <span class="toggle"></span>
-                </summary>
-                <p>Resposta da pergunta 1...</p>
-            </details>
-            <details class="dropdown">
-                <summary>
-                    Pergunta 2?
-                    <span class="toggle"></span>
-                </summary>
-                <p>Resposta da pergunta 2...</p>
-            </details>
-        </div>
-
-        <!-- Categoria 2 -->
-        <div class="category">
-            <div class="category-header">
-                <img src="https://via.placeholder.com/40" alt="Ícone">
-                <h2>Categoria 2</h2>
-            </div>
-            <p class="category-description">Descrição da categoria...</p>
-            <details class="dropdown">
-                <summary>
-                    Pergunta 3?
-                    <span class="toggle"></span>
-                </summary>
-                <p>Resposta da pergunta 3...</p>
-            </details>
-            <details class="dropdown">
-                <summary>
-                    Pergunta 4?
-                    <span class="toggle"></span>
-                </summary>
-                <p>Resposta da pergunta 4...</p>
-            </details>
-        </div>
+        </section>
     </main>
-</body>
 
+    <main>
+        <section>
+            <h2 onclick="toggleAnswer(2)">
+                📌 pergunta 2
+                <span class="icon" id="icon2">+</span>
+            </h2>
+            <div class="question" id="answer2">
+                <p>Para participar, basta se inscrever no canal e interagir com a galera nos chats e transmissões ao vivo!</p>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <section>
+            <h2 onclick="toggleAnswer(3)">
+                📌 pergunta 3
+                <span class="icon" id="icon3">+</span>
+            </h2>
+            <div class="question" id="answer3">
+                <p>As transmissões acontecem de segunda a sexta-feira, das 20h às 23h. Fique ligado nas notificações!</p>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <section>
+            <h2 onclick="toggleAnswer(3)">
+                📌 pergunta 4
+                <span class="icon" id="icon3">+</span>
+            </h2>
+            <div class="question" id="answer3">
+                <p>As transmissões acontecem de segunda a sexta-feira, das 20h às 23h. Fique ligado nas notificações!</p>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <section>
+            <h2 onclick="toggleAnswer(3)">
+                📌 pergunta 5
+                <span class="icon" id="icon3">+</span>
+            </h2>
+            <div class="question" id="answer3">
+                <p>As transmissões acontecem de segunda a sexta-feira, das 20h às 23h. Fique ligado nas notificações!</p>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <section>
+            <h2 onclick="toggleAnswer(3)">
+                📌 pergunta 6
+                <span class="icon" id="icon3">+</span>
+            </h2>
+            <div class="question" id="answer3">
+                <p>As transmissões acontecem de segunda a sexta-feira, das 20h às 23h. Fique ligado nas notificações!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito com <3 por <a href="https://anjosdev.vercel.app" target="_blank">anjosMP3</a> inspirado no <a href="https://tutorialdochat.site" target="_blank">tutorial do chat do Cellbit</a></p>
+    </footer>
+
+    <script>
+        function toggleAnswer(number) {
+            const answer = document.getElementById('answer' + number);
+            const icon = document.getElementById('icon' + number);
+
+            if (answer.classList.contains('open')) {
+                answer.classList.remove('open');
+                icon.textContent = '+';  // Muda para "+"
+            } else {
+                answer.classList.add('open');
+                icon.textContent = '-';  // Muda para "-"
+            }
+        }
+    </script>
+</body>
 </html>
