@@ -114,6 +114,16 @@
             color: #f43163;
             margin-top: 30px;  /* Ajusta a distância do topo se necessário */
         }
+        .badge {
+            height: 20px;
+            width: 20px;
+            position: relative;
+            top: 5px; /* Ajuste conforme necessário para mover para baixo */
+        }
+        .emes {
+            height: 20px;
+            width: 20px;
+        }
     </style>
 </head>
 <body>
@@ -134,11 +144,15 @@
     <main>
         <section>
             <h2 onclick="toggleAnswer(1)">
-                📌 pergunta 1
+                🎥 Quem é quem no chat?
                 <span class="icon" id="icon1">+</span>
             </h2>
             <div class="question" id="answer1">
-                <p>Uma subathon é uma live em que, a cada Pix ou Sub, um tempo específico é adicionado ao timer. A live continua até o timer chegar a zero, ou seja, não pode acabar enquanto houver tempo no contador.</p>
+                <p><img class="badge" src="https://tutorialdochat.site/wp-content/uploads/elementor/thumbs/Streamer-osnponfob4cltbk72o56owx177047w2s5ze18y8buo.png"> Streamer - Normalmente é o que está na tela falando conosco todo o tempo</p>
+                <p><img class="badge" src="https://tutorialdochat.site/wp-content/uploads/elementor/thumbs/Mod-osnpoznkrytc092g3bfc3bu0x7bvzyfajnvchjq7ls.png"> Mods - Os guardas, os únicos que podem dar Timeout e Ban (veja na pergunta abaixo para saber o que é isso), eles são bem legais! 👍</p>
+                <p><img class="badge" src="https://tutorialdochat.site/wp-content/uploads/elementor/thumbs/Vip-osnppwjxf62dalqnr7na0lj5potqhd1wc6pca8dfk0.png"> VIPS - Usuários escolhidos pelo MeiaUm ou que compraram o cargo com pontos de canal, eles podem ignorar o cooldown (Modo lento) de mensagens e tem destaque no chat.</p>
+                <p><img class="badge" src="https://static-cdn.jtvnw.net/badges/v1/c5c4cd60-66a6-4887-9ac3-cade8dccebd3/3"> Subs - Usuários que pagam o Streamer mensalmente, pessoas que tem esta insígnia não recebem anúncios e ganham acesso a emotes exclusivos do canal. Você pode assinar clicando <a href="https://www.twitch.tv/subs/omeiaum" target="_blank">aqui</a>.</p>
+                <p><img class="badge" src="https://tutorialdochat.site/wp-content/uploads/elementor/thumbs/SubGift-osnr5aeb14enz73npf92bmqarzk39p1neikwqs6neo.gif"> Sub Gifter - Pessoas que tem esta insígnia, pagaram para outras pessoas também serem assinantes do canal.</p>
             </div>
         </section>
     </main>
@@ -146,11 +160,14 @@
     <main>
         <section>
             <h2 onclick="toggleAnswer(2)">
-                📌 pergunta 2
+                🎥 Quais são as punições?
                 <span class="icon" id="icon2">+</span>
             </h2>
             <div class="question" id="answer2">
-                <p>Para participar, basta se inscrever no canal e interagir com a galera nos chats e transmissões ao vivo!</p>
+                <p><strong>Mensagem Deletada</strong> - Algum moderador deletou sua mensagem e ela não irá aparecer, você pode mandar mais mensagens.</p>
+                <p><strong>Aviso</strong> - Algum moderador te mandou um aviso, isso normalmente é enviado para te avisar de algo de errado que você está fazendo, e que se você repetir provavelmente irá tomar uma punição.</p>
+                <p><strong>Timeout (tempo fora)</strong> - Esta punição te deixa suspenso por um tempo no chat, podendo ser de 1 segundo até 14 dias.</p>
+                <p><strong>Banimento</strong> - Esta punição te deixa sem ver o chat, e sem mandar mensagem, você pode pedir a remoção dela clicando em "Solicitar remoção de banimento" e precisará escrever o porque você acha que deve ser desbanido, mas não é preciso que você será desbanido.</p>
             </div>
         </section>
     </main>
@@ -158,11 +175,18 @@
     <main>
         <section>
             <h2 onclick="toggleAnswer(3)">
-                📌 pergunta 3
+                🎥 Quais são as vantagens de ser um Sub? (Assinante)
                 <span class="icon" id="icon3">+</span>
             </h2>
             <div class="question" id="answer3">
-                <p>As transmissões acontecem de segunda a sexta-feira, das 20h às 23h. Fique ligado nas notificações!</p>
+                <p>As vantagens de ser um sub são:</p>
+                <p>- <strong>Aumentar 3 minutos no timer!</strong></p>
+                <p>- Ganhar emotes exclusivos do canal e poder usar eles por toda a Twitch.</p>
+                <p>- Ganhar uma insígnia exclusiva no canal como essa -> <img class="badge" src="https://static-cdn.jtvnw.net/badges/v1/c5c4cd60-66a6-4887-9ac3-cade8dccebd3/3"> (insígnia muda baseado no tanto de tempo que você assina) </p>
+                <p>- Não ver anúncios na live.</p>
+                <p>- Não ser afetado pelo modo lento do chat.</p>
+                <p>- Ganhar cargo e acesso a salas exclusivas no <a href="https://discord.gg/meiaum" target="_blank">Discord do MeiaUm</a>.</p>
+                <p>- Ajudar o streamer! 😁</p>
             </div>
         </section>
     </main>
@@ -170,11 +194,16 @@
     <main>
         <section>
             <h2 onclick="toggleAnswer(4)">
-                📌 pergunta 4
+                🎥 O que é esse M (Emes) embaixo do meu chat?
                 <span class="icon" id="icon4">+</span>
             </h2>
             <div class="question" id="answer4">
-                <p>As transmissões acontecem de segunda a sexta-feira, das 20h às 23h. Fique ligado nas notificações!</p>
+                <p>Os EMES (pontos do canal) são pontos que você ganha enquanto assiste a live, com eles você pode gastar em várias recompensas como:</p>
+                <p>- Destacar a sua mensagem (30,000 EMES).</p>
+                <p>- Recomendação de Música (50,000 EMES, <strong>que atualmente está desativada</strong>).</p>
+                <p>- VIP (500,000 EMES, <strong>por 3 meses</strong>).</p>
+                <p>- Posto uma ID (600,000 EMES, <strong>faz ele lançar uma música/remix não lançada ainda</strong>).</p>
+                <p>- MUITO (1,000,000 EMES, <strong>é MUITO MESMO</strong>).</p>
             </div>
         </section>
     </main>
@@ -182,26 +211,16 @@
     <main>
         <section>
             <h2 onclick="toggleAnswer(5)">
-                📌 pergunta 5
+                🎥 Tenho dúvidas técnicas
                 <span class="icon" id="icon5">+</span>
             </h2>
             <div class="question" id="answer5">
-                <p>As transmissões acontecem de segunda a sexta-feira, das 20h às 23h. Fique ligado nas notificações!</p>
+                <p>Para solucionar dúvidas técnicas, <a href="https://help.twitch.tv/s/?language=pt_BR" target="_blank">Acesse o suporte oficial da Twitch</a>.</p>
             </div>
         </section>
     </main>
 
-    <main>
-        <section>
-            <h2 onclick="toggleAnswer(6)">
-                📌 pergunta 6
-                <span class="icon" id="icon6">+</span>
-            </h2>
-            <div class="question" id="answer6">
-                <p>As transmissões acontecem de segunda a sexta-feira, das 20h às 23h. Fique ligado nas notificações!</p>
-            </div>
-        </section>
-    </main>
+
 
     <footer>
         <p>Feito com <3 por <a href="https://anjosdev.vercel.app" target="_blank">anjosMP3</a> inspirado no <a href="https://tutorialdochat.site" target="_blank">tutorial do chat do Cellbit</a></p>
