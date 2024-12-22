@@ -1,11 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Meiathon FAQ</title>
+    <title>Tutorial do Chat</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.7tv.app/emote/01J3TH4BR0000D6Z8P187FZ2VZ/4x.avif">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #f43163;
+        }
+        header h1 {
+            margin: 0;
+            color: #f43163;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+            gap: 25px 35px; /* Gap vertical: 25px, horizontal: 35px */
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto; /* Centraliza a grade na tela */
+        }
+        .card {
+            background: #2c2c2c;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            height: 250px; /* Aumenta a altura das divs */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            width: 100%;
+            height: 100%; /* Garante que o link cubra toda a div */
+            border-radius: 8px; /* Alinha com a borda arredondada da div */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .card h3 {
+            color: #f43163;
+            margin: 20px 0 0; /* Aumenta a distância entre o texto e o ícone */
+            font-size: 1.2em; /* Opcional: aumenta o tamanho do texto */
+        }
+        .card img {
+            width: 70px; /* Ícone maior */
+            height: 70px;
+            margin-bottom: 20px; /* Maior distância entre ícone e texto */
+        }
+        .card:hover {
+            background-color: #3a3a3a; /* Efeito de hover */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #1e1e1e;
+            color: #888;
+            border-top: 1px solid #333;
+        }
+        footer a {
+            color: #f43163;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #ffd14a;
+        }
+
+        .titulo {
+            text-align: center;
+            color: #f43163;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tutorial do Chat</h1>
+        <p>Tudo o que você precisa saber sobre o chat do <a class="titulo" href="https://twitch.tv/omeiaum" target="_blank">oMeiaUm</a>!</p>
+    </header>
+
     <main>
-        <h1>em construsao</h1>
+        <div class="container">
+            <div class="card">
+                <a href="subathon.html">
+                    <img src="https://i.imgur.com/Gm5akvi.png" alt="Ícone placeholder">
+                    <h3>Subathon</h3>
+                    <p>Como funciona uma subathon?</p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="chat.html">
+                    <img src="https://i.imgur.com/xq70AiR.png" alt="Ícone placeholder">
+                    <h3>Chat</h3>
+                    <p>Por que o chat é assim?</p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="emotes.html">
+                    <img src="https://i.imgur.com/0qMGfD1.png" alt="Ícone placeholder">
+                    <h3>Emotes</h3>
+                    <p>O que são essas palavras no chat?</p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="twitch.html">
+                    <img src="https://i.imgur.com/SJx5Ct6.png" alt="Ícone da Twitch">
+                    <h3>Twitch</h3>
+                    <p>Como funciona a Twitch em geral</p>
+                </a>
+            </div>
+        </div>
     </main>
+</body>
+</html>
