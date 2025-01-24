@@ -18,6 +18,6 @@ Você pode falar comigo pelo Discord (**@anjosmp3**) ou pelo sussurro da Twitch!
 ### O MeiaUm já viu o site?
 Sim! o MeiaUm citou o site no vídeo "[EU ESTOU EM LIVE A 273 DIAS](https://www.youtube.com/watch?v=PzRoQpOuzd8&t=780s)" em seu canal!
 
-!(https://i.imgur.com/3FfjUQD.png)
+![Ooi](https://i.imgur.com/3FfjUQD.png)
 
 
