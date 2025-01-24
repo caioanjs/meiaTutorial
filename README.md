@@ -9,3 +9,7 @@ Eu sei, eu sei que poucas pessoas irão entrar no site pra realmente aprender al
 ### Qual é o link do site?
 O link do site é [meiaTutorial.vercel.app](https://meiaTutorial.vercel.app) ! (eu ainda não sou rico pra comprar um domínio próprio...)
 
+### Tenho uma sugestão de pergunta/como melhorar o site
+Você pode falar comigo pelo Discord (**@anjosmp3**) ou pelo sussurro da Twitch! ([anjosMP3](twitch.tv/anjosMP3))
+
+
