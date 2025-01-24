@@ -16,8 +16,10 @@ O link do site é [meiaTutorial.vercel.app](https://meiaTutorial.vercel.app) ! (
 Você pode falar comigo pelo Discord (**@anjosmp3**) ou pelo sussurro da Twitch! ([anjosMP3](twitch.tv/anjosMP3))
 
 ### O MeiaUm já viu o site?
-Sim! o MeiaUm citou o site no vídeo "[EU ESTOU EM LIVE A 273 DIAS](https://www.youtube.com/watch?v=PzRoQpOuzd8&t=780s)" em seu canal!
+Sim! o MeiaUm citou o site no vídeo "[EU ESTOU EM LIVE A 273 DIAS](https://www.youtube.com/watch?v=PzRoQpOuzd8&t=780s)" em seu canal!\
 
-![Ooi](https://i.imgur.com/3FfjUQD.png)
+
+
+![Banner do site](https://i.imgur.com/3FfjUQD.png)
 
 
