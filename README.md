@@ -16,4 +16,4 @@ O link do site é [meiaTutorial.vercel.app](https://meiaTutorial.vercel.app) ! (
 Você pode falar comigo pelo Discord (**@anjosmp3**) ou pelo sussurro da Twitch! ([anjosMP3](twitch.tv/anjosMP3))
 
 ### O MeiaUm já viu o site?
-![Anti-Trust - War Machine](https://www.youtube.com/watch?v=PzRoQpOuzd8&t=780s)
+Sim! o MeiaUm citou o site no vídeo "[EU ESTOU EM LIVE A 273 DIAS](https://www.youtube.com/watch?v=PzRoQpOuzd8&t=780s)" no seu canal!
