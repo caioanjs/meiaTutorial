@@ -15,4 +15,5 @@ O link do site é [meiaTutorial.vercel.app](https://meiaTutorial.vercel.app) ! (
 ### Tenho uma sugestão de pergunta/como melhorar o site
 Você pode falar comigo pelo Discord (**@anjosmp3**) ou pelo sussurro da Twitch! ([anjosMP3](twitch.tv/anjosMP3))
 
-
+### O MeiaUm já viu o site?
+(https://img.youtube.com/vi/PzRoQpOuzd8&t=780s/0.jpg)](https://youtu.be/PzRoQpOuzd8?t=780)
